@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Dos Guard</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--
+      Navigation Bar
+      It contains logo and navigation links to navigate through webpages of DOS GUARD website
+    -->
+    <nav>
+      <div class="logo"><img src="assets/the-logo.svg" alt="" />Dos Guard</div>
+      <div class="navbar">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="about.html" class="navlink">About</a>
+        <a href="products.html" class="navlink">Products</a>
+        <a href="advertisements.html" class="navlink">Advertisements</a>
+        <a href="contact.html" class="navlink active">Contact</a>
+      </div>
+    </nav>
+    <!-- 
+      Header
+      It contains a background image related to the website 
+      And animation on Heading an subheading text
+     -->
+    <header>
+      <h1></h1>
+      <span></span>
+    </header>
+    <main>
+      <section class="contact">
+        <!-- 
+          Contact Details
+          These are simple details that can be used by user to email or call us or visit us.
+         -->
+        <div class="contact-details">
+          <div class="contact-detail-group">
+            <div class="contact-detail-group-heading">Name</div>
+            <div class="contact-detail-group-detail">Dos Guard</div>
+          </div>
+          <div class="contact-detail-group">
+            <div class="contact-detail-group-heading">Address</div>
+            <div class="contact-detail-group-detail">
+              1001 Fanshawe College Blvd, London, ON N5Y 5R6, Canada
+            </div>
+          </div>
+          <div class="contact-detail-group">
+            <div class="contact-detail-group-heading">Phone Number</div>
+            <div class="contact-detail-group-detail">+15194524277</div>
+          </div>
+          <div class="contact-detail-group">
+            <div class="contact-detail-group-heading">Email Address</div>
+            <div class="contact-detail-group-detail">contact@thedosguardbeer.ca</div>
+          </div>
+        </div>
+        <!-- 
+          Contact Map
+          It is a embedded google map so that user can locate us
+         -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46707.144215005974!2d-81.26008641023196!3d42.974133912189544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eed0db33e1e9f%3A0xafcae4298924fa54!2sFanshawe%20College!5e0!3m2!1sen!2sin!4v1644648866405!5m2!1sen!2sin"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <!-- 
+          Contact Form
+          User can contact us using this form.
+        -->
+        <form method="get" class="contact-form" action="#">
+          <div class="contact-form__heading">Contact Form</div>
+          <div class="contact-form__group">
+            <label for="name" class="contact-form__group__label">Full Name</label>
+            <input type="text" name="name" id="name" class="contact-form__group__input" required />
+          </div>
+          <div class="contact-form__group">
+            <label for="email" class="contact-form__group__label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact-form__group__input"
+              required
+            />
+          </div>
+          <div class="contact-form__group">
+            <label for="phone" class="contact-form__group__label">Phone</label>
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              name="phone"
+              id="phone"
+              class="contact-form__group__input"
+              required
+            />
+          </div>
+          <div class="contact-form__group">
+            <label for="message" class="contact-form__group__label">Your Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="contact-form__group__input"
+              required
+            ></textarea>
+          </div>
+          <div class="contact-form__group">
+            <input type="submit" name="phone" id="phone" class="contact-form__group__input" />
+            <input type="reset" name="phone" id="phone" class="contact-form__group__input" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__logo">
+        <img src="assets/the-logo.svg" alt="" />
+      </div>
+      <div class="footer__links">
+        <a href="/contact.html" class="footer__links__link">Contact Us</a>
+        <a href="/about.html" class="footer__links__link">About</a>
+        <a href="/products.html" class="footer__links__link">Products</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/" class="footer__social__link">
+          <img src="assets/facebook.svg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/" class="footer__social__link">
+          <img src="assets/insta.svg" alt="" />
+        </a>
+        <a href="https://www.twitter.com/" class="footer__social__link">
+          <img src="assets/twitter.svg" alt="" />
+        </a>
+        <a href="https://www.youtube.com/" class="footer__social__link">
+          <img src="assets/youtube.svg" alt="" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

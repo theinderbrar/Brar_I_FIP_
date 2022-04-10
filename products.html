@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Dos Guard</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--
+      Navigation Bar
+      It contains logo and navigation links to navigate through webpages of DOS GUARD website
+    -->
+    <nav>
+      <div class="logo"><img src="assets/the-logo.svg" alt="" />Dos Guard</div>
+      <div class="navbar">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="about.html" class="navlink">About</a>
+        <a href="products.html" class="navlink active">Products</a>
+        <a href="advertisements.html" class="navlink">Advertisements</a>
+        <a href="contact.html" class="navlink">Contact</a>
+      </div>
+    </nav>
+    <!-- 
+      Header
+      It contains a background image related to the website 
+      And animation on Heading an subheading text
+     -->
+    <header>
+      <h1></h1>
+      <span></span>
+    </header>
+    <main>
+      <div style="display: none;" class="product-details-popup">
+        <div class="product-details-popup-container">
+          <div onclick='hidePopup()'  class="close">X CLOSE</div>
+          <div class="product-image">
+            <img src="img/" alt="">
+          </div>
+          <div class="product-name">XTREME CLASSICAL EDGE</div>
+          <div class="product-description">Dos Guard proudly presents the best beer flavor, Xtreme Classical Edge. It is one of the best beer, if you haven't tried it yet. Try! you will love it.</div>
+          <div class="buy">BUY NOW</div>
+        </div>
+      </div>
+      <!-- 
+        Products Section
+        It contains the list of beer products sold by the company with price
+        Buy now button is given under each product.
+        The list is resposive, i.e. It can be shown adapt any screensize
+       -->
+      <h2  class="textcenter">DOS GUARD XTREME COLLECTION!</h1>
+      <section class="products">
+        <div class="product" data-id="0">
+          <div class="product-image">
+            <img class="product-image-image" src="img/prop0010.jpg" alt="" />
+          </div>
+          <div class="product-name">XTREME ARCTIC REFRESH</div>
+          <div class="product-price">$ 16.99</div>
+          <a href="#" class="product-buy">Buy Now</a>
+        </div>
+        <div class="product" data-id="1">
+          <div class="product-image">
+            <img class="product-image-image" src="img/prop1_0010.jpg" alt="" />
+          </div>
+          <div class="product-name">XTREME FRESHNESS BLAST</div>
+          <div class="product-price">$ 15.99</div>
+          <a href="#" class="product-buy">Buy Now</a>
+        </div>
+        <div class="product" data-id="2">
+          <div class="product-image">
+            <img class="product-image-image" src="img/prop12_0010.jpg" alt="" />
+          </div>
+          <div class="product-name">XTREME OCEANIC'O RUST</div>
+          <div class="product-price">$ 19.99</div>
+          <a href="#" class="product-buy">Buy Now</a>
+        </div>
+        <div class="product" data-id="3">
+          <div class="product-image">
+            <img class="product-image-image" src="img/prop13_0010.jpg" alt="" />
+          </div>
+          <div class="product-name">XTREME CLASSICAL EDGE</div>
+          <div class="product-price">$ 59.99</div>
+          <a href="#" class="product-buy">Buy Now</a>
+        </div>
+      </section>
+    </main>
+    <!-- 
+      Footer Section
+      In this section, owner information is given
+     -->
+    <footer>
+      <div class="footer__logo">
+        <img src="assets/the-logo.svg" alt="" />
+      </div>
+      <div class="footer__links">
+        <a href="/contact.html" class="footer__links__link">Contact Us</a>
+        <a href="/about.html" class="footer__links__link">About</a>
+        <a href="/products.html" class="footer__links__link">Products</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/" class="footer__social__link">
+          <img src="assets/facebook.svg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/" class="footer__social__link">
+          <img src="assets/insta.svg" alt="" />
+        </a>
+        <a href="https://www.twitter.com/" class="footer__social__link">
+          <img src="assets/twitter.svg" alt="" />
+        </a>
+        <a href="https://www.youtube.com/" class="footer__social__link">
+          <img src="assets/youtube.svg" alt="" />
+        </a>
+      </div>
+    </footer>
+     <!-- script -->
+     <script src="/js/script.js"></script>
+  </body>
+</html>
